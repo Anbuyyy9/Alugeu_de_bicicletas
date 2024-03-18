@@ -1,4 +1,4 @@
-# Alugeu_de_bicicletas
+# Alugel_de_bicicletas
 Trabalhando com Machine Learning na Prática no Azure ML
 
 Passo a Passo para Construir um Modelo de Previsão de Aluguel de Bicicletas:
