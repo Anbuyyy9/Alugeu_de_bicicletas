@@ -1,40 +1,95 @@
-# Alugel_de_bicicletas
-Trabalhando com Machine Learning na Prática no Azure ML
+# 🚲 Aluguel de Bicicletas - Previsão com Azure Machine Learning
 
-Passo a Passo para Construir um Modelo de Previsão de Aluguel de Bicicletas:
-Definição do Problema:
+Este projeto tem como objetivo construir um modelo preditivo para estimar a **demanda por aluguel de bicicletas** com base em dados históricos, utilizando o **Azure Machine Learning**.
 
-Compreender o objetivo do projeto, que pode ser prever a demanda por bicicletas com base em dados históricos.
-Aquisição de Dados:
+---
 
-Obter dados históricos de aluguéis de bicicletas. Isso pode incluir informações como data, hora, condições climáticas, número de bicicletas disponíveis, etc.
-Pré-processamento de Dados:
+## 🎯 Objetivo
 
-Limpar os dados, lidar com valores ausentes e outliers, e realizar transformações necessárias como codificação de variáveis categóricas.
-Análise Exploratória de Dados (EDA):
+Desenvolver uma solução prática de Machine Learning que permita prever o número de bicicletas alugadas a partir de variáveis como condições climáticas, data/hora e outros fatores relevantes.
 
-Explorar e visualizar os dados para entender padrões, tendências e correlações entre as variáveis.
-Seleção e Engenharia de Recursos:
+---
 
-Identificar os recursos relevantes para o modelo e possivelmente criar novos recursos que possam melhorar a performance do modelo.
-Divisão do Conjunto de Dados:
+## 🧭 Etapas do Projeto
 
-Dividir os dados em conjuntos de treinamento e teste para avaliação do desempenho do modelo.
-Construção do Modelo:
+### 1. 📌 Definição do Problema
 
-Escolher um algoritmo de modelo adequado, como regressão linear, árvores de decisão, ou modelos mais complexos como redes neurais. Treinar o modelo com os dados de treinamento.
-Avaliação do Modelo:
+- Compreensão do desafio: prever a demanda por aluguel de bicicletas
+- Identificação das variáveis que influenciam essa demanda
 
-Avaliar o desempenho do modelo utilizando métricas apropriadas, como erro quadrático médio (RMSE), coeficiente de determinação (R²), entre outros.
-Otimização do Modelo:
+### 2. 📥 Aquisição de Dados
 
-Tunar os hiperparâmetros do modelo para melhorar seu desempenho, utilizando técnicas como validação cruzada.
-Validação do Modelo:
+- Coleta de dados históricos de aluguel de bicicletas
+- Fontes de dados incluem: data, hora, clima, feriados, entre outros
 
-Avaliar o desempenho final do modelo utilizando os dados de teste para garantir que ele generalize bem para novos dados não vistos.
-Implantação do Modelo:
+### 3. 🧹 Pré-processamento de Dados
 
-Se necessário, implementar o modelo em um ambiente de produção para fazer previsões em tempo real.
-Documentação e Comunicação:
+- Limpeza de dados e remoção de inconsistências
+- Tratamento de valores ausentes e **outliers**
+- Codificação de variáveis categóricas (One-Hot, Label Encoding)
 
-Documentar todo o processo, desde a aquisição de dados até a implantação do modelo, e comunicar os resultados de forma clara e concisa.
+### 4. 📊 Análise Exploratória de Dados (EDA)
+
+- Visualização de distribuições, correlações e tendências
+- Identificação de padrões de comportamento ao longo do tempo
+
+### 5. 🛠️ Seleção e Engenharia de Recursos
+
+- Escolha das variáveis mais relevantes
+- Criação de novas features (ex: dia da semana, horário de pico)
+
+### 6. ✂️ Divisão do Conjunto de Dados
+
+- Separação dos dados em:
+  - Conjunto de **treinamento**
+  - Conjunto de **teste**
+- Proporção recomendada: 80/20
+
+### 7. 🧠 Construção do Modelo
+
+- Escolha de algoritmos:
+  - Regressão Linear
+  - Decision Tree Regressor
+  - Random Forest
+  - Redes Neurais (caso necessário)
+- Treinamento do modelo com os dados históricos
+
+### 8. 📈 Avaliação do Modelo
+
+- Métricas utilizadas:
+  - **RMSE** (Root Mean Squared Error)
+  - **R²** (Coeficiente de Determinação)
+- Verificação de **overfitting** e **underfitting**
+
+### 9. 🛠️ Otimização do Modelo
+
+- Ajuste de hiperparâmetros com técnicas como:
+  - Grid Search
+  - Random Search
+  - Cross Validation
+
+### 10. 🧪 Validação do Modelo
+
+- Teste final com os dados de **validação**
+- Avaliação do poder de generalização do modelo
+
+### 11. 🚀 Implantação do Modelo
+
+- Implantação no **Azure ML Endpoint**
+- Possibilidade de uso para **previsões em tempo real** via API
+
+### 12. 📝 Documentação e Comunicação
+
+- Relatório técnico com todas as etapas documentadas
+- Comunicação clara dos **resultados**, métricas e aprendizados
+
+---
+
+## 🔧 Tecnologias Utilizadas
+
+- Azure Machine Learning
+- Python
+- Pandas / NumPy
+- Matplotlib / Seaborn
+- Scikit-learn
+- Jupyter Notebook
